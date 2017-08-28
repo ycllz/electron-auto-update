@@ -27,5 +27,9 @@ autoUpdater.on("update-not-available", ()=>
 })
 autoUpdater.on("update-downloaded", ()=>
 {
-  console.log("update-downloaded");
+  console.log("update-downloaded, install after 5 seconds");
+  setTimeout(function()
+  {
+  	autoUpdater.quitAndInstall();
+  }, 5000);
 })
