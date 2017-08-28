@@ -1,0 +1,17 @@
+{
+  "name": "electron-auto-update",
+  "version": "1.0.0",
+  "description": "A demo to test auto update.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "rm -rf electron-auto-update-darwin-x64 && electron-packager --electron-version=1.7.5 . && codesign -s 4XRST2UF2Q --deep --timestamp=none  electron-auto-update-darwin-x64/electron-auto-update.app"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0"
+}
